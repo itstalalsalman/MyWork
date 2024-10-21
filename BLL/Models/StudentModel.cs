@@ -1,23 +1,22 @@
 ﻿#nullable disable
 using BLL.DAL;
+using System.ComponentModel;
 
 namespace BLL.Models
 {
     public class StudentModel
     {
-        public Student Student { get; set; }
+        public Student Record { get; set; }
 
-        public int Id => Student.Id;
+        public int Id => Record.Id;
 
-        public string Name => Student.Name;
+        public string Name => Record.Name;
 
-        public string Surname => Student.Surname;
+        public string Surname => Record.Surname;
 
-        public DateTime? BirthDate => Student.BirthDate;
+        public DateTime? BirthDate => Record.BirthDate;
 
-        public decimal? Gpa => Student.Gpa;
-
-
+        public decimal? Gpa => Record.Gpa;
 
     }
 }
